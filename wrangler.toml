@@ -1,0 +1,13 @@
+name = "api-emaction"
+main = "src/worker.js"
+compatibility_date = "2023-07-25"
+usage_model = "bundled"
+env = { }
+
+[[d1_databases]]
+binding = "d1" # i.e. available in your Worker on env.DB
+database_name = "emaction"
+database_id = "34652bf0-91e5-470d-bbf3-c9c8ac0e147e"
+
+[triggers]
+crons = [ ]
