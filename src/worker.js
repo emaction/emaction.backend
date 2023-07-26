@@ -53,7 +53,7 @@ export default {
       } else {
         // update
         // TODO: updated_at
-        env.d1.prepare(`update reactions set count = ?1, updated_at = ${Date.now()} where target_id = ?2 and reaction_name = ?3`)
+        stmt = env.d1.prepare(`update reactions set count = ?1, updated_at = ${Date.now()} where target_id = ?2 and reaction_name = ?3`)
           .bind(Math.max(0, count + diff), targetId, reaction_name)
       }
       const result = await stmt.run()
