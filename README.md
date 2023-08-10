@@ -22,7 +22,7 @@
 
     **入参示例：**
 
-    ```jsx
+    ```
     /reactions?targetId=fakeid
     ```
 
@@ -74,7 +74,7 @@
     
     **入参示例：**
     
-    ```json
+    ```
     /reaction?targetId=fakeid&reaction_name=smile-face&diff=1
     ```
     
